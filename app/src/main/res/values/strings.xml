@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Tugas_01</string>
+    <string name="widget">WIDGET</string>
+    <string name="submit">SUBMIT</string>
+    <string name="nama">NAMA</string>
+    <string name="universitas">UNIVERSITAS</string>
+    <string name="jurusan">JURUSAN</string>
+    <string name="jenis_kelamin">JENIS KELAMIN</string>
+    <string name="pria">PRIA</string>
+    <string name="wanita">WANITA</string>
+</resources>
