@@ -9,6 +9,7 @@
     <string name="pria">PRIA</string>
     <string name="wanita">WANITA</string>
 
+    <!--Untuk list spinner-->
     <string-array name="jurusan_array">
         <item>JURUSAN…</item>
         <item>AKUTANSI D3</item>
