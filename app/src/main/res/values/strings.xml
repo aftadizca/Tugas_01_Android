@@ -10,7 +10,7 @@
     <string name="wanita">WANITA</string>
 
     <string-array name="jurusan_array">
-        <item>JURUSAN...</item>
+        <item>JURUSAN…</item>
         <item>AKUTANSI D3</item>
         <item>AKUTANSI S1</item>
         <item>DKV S1</item>
