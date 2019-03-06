@@ -9,13 +9,14 @@
         tools:context=".MainActivity" tools:ignore="Overdraw">
     <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="0dp"
-            android:layout_height="0dp"
+            android:layout_height="wrap_content"
             android:background="@drawable/background"
             android:alpha="1"
+            android:scrollbars="vertical"
             app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="50dp"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="50dp"
-            android:layout_marginBottom="100dp" app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginTop="100dp" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginBottom="32dp" app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="32dp" app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintWidth_default="spread" android:id="@+id/frameLayout">
 
         <FrameLayout
@@ -43,66 +44,68 @@
                 app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
                 android:layout_marginEnd="8dp"
                 android:layout_marginStart="8dp"
-                android:layout_marginBottom="8dp" android:textSize="18sp" android:onClick="Submit"/>
+                android:textSize="18sp" android:onClick="Submit"
+                android:layout_marginTop="64dp" app:layout_constraintTop_toBottomOf="@+id/kelaminGroup"
+                app:layout_constraintVertical_bias="0.88" android:layout_marginBottom="16dp"/>
         <EditText
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName"
                 android:ems="10"
                 android:backgroundTint="@color/colorAccent"
-                android:id="@+id/namaInput" android:layout_marginEnd="8dp"
-                app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="8dp"
+                android:id="@+id/namaInput" android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="16dp"
                 app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="32dp"
                 app:layout_constraintTop_toBottomOf="@+id/judul_1" android:hint="@string/nama"
-                android:autofillHints=""/>
+                android:autofillHints="" android:paddingStart="8dp"/>
         <EditText
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName"
                 android:backgroundTint="@color/colorAccent"
                 android:ems="10"
-                android:id="@+id/univInput" android:layout_marginEnd="8dp"
-                app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="8dp"
+                android:id="@+id/univInput" android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="16dp"
                 app:layout_constraintStart_toStartOf="parent"
                 android:hint="@string/universitas"
                 app:layout_constraintHorizontal_bias="0.0" android:layout_marginTop="8dp"
-                app:layout_constraintTop_toBottomOf="@+id/namaInput"/>
-        <EditText
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:inputType="textPersonName"
-                android:ems="10"
-                android:backgroundTint="@color/colorAccent"
-                android:id="@+id/jurusanInput" android:layout_marginEnd="8dp"
-                app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="8dp"
-                app:layout_constraintStart_toStartOf="parent"
-                android:hint="@string/jurusan"
-                app:layout_constraintHorizontal_bias="0.0"
-                android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/univInput"/>
+                app:layout_constraintTop_toBottomOf="@+id/namaInput" android:paddingStart="8dp"/>
         <RadioGroup
                 android:layout_width="0dp"
                 android:layout_height="103dp"
-                app:layout_constraintTop_toBottomOf="@+id/jurusanInput" app:layout_constraintEnd_toEndOf="parent"
-                android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
-                android:layout_marginStart="8dp" android:layout_marginTop="8dp"
-                android:checkedButton="@+id/priaRadio" android:id="@+id/kelaminGroup">
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="16dp" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="16dp"
+                android:checkedButton="@+id/priaRadio" android:id="@+id/kelaminGroup"
+                android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/jurusanInput"
+        >
             <TextView
                     android:text="@string/jenis_kelamin"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" android:id="@+id/textView3" android:layout_weight="1"
-                    android:textSize="18sp"/>
+                    android:textColor="#000"
+                    android:textSize="18sp" android:paddingStart="5dp"/>
             <RadioButton
                     android:text="@string/pria"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" android:id="@+id/priaRadio" android:layout_weight="1"
                     android:buttonTint="@color/colorAccent"
-                    android:textSize="18sp"/>
+                    android:textSize="18sp" android:layout_marginStart="8dp"/>
             <RadioButton
                     android:text="@string/wanita"
                     android:layout_width="214dp"
                     android:buttonTint="@color/colorAccent"
                     android:layout_height="wrap_content" android:id="@+id/wanitaRadio" android:layout_weight="1"
-                    android:textSize="18sp"/>
+                    android:textSize="18sp" android:layout_marginStart="8dp"/>
         </RadioGroup>
+        <Spinner
+                android:layout_width="296dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/jurusanInput" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/univInput" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="16dp" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="16dp" android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/kelaminGroup" android:spinnerMode="dialog"
+                android:paddingStart="5dp" android:paddingTop="10dp" android:paddingBottom="10dp"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,4 +8,18 @@
     <string name="jenis_kelamin">JENIS KELAMIN</string>
     <string name="pria">PRIA</string>
     <string name="wanita">WANITA</string>
+
+    <string-array name="jurusan_array">
+        <item>JURUSAN...</item>
+        <item>AKUTANSI D3</item>
+        <item>AKUTANSI S1</item>
+        <item>DKV S1</item>
+        <item>HUKUM S1</item>
+        <item>MANAJEMEN S1</item>
+        <item>TEKNIK INDUSTRI S1</item>
+        <item>TEKNIK INFORMATIKA S1</item>
+        <item>TEKNIK KOMPUTER D3</item>
+        <item>TEKNIK MESIN S1</item>
+    </string-array>
+
 </resources>
