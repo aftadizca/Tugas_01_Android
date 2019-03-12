@@ -1,5 +1,6 @@
 package e.adw.tugas_01
 
+import android.animation.ObjectAnimator
 import android.app.AlertDialog
 import android.content.Context
 import android.graphics.Paint
