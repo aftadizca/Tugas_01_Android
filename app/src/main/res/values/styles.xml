@@ -10,9 +10,16 @@
         <item name="android:textColorHint">@color/colorHint</item>
     </style>
     <style name="CostumDialog" parent="ThemeOverlay.AppCompat.Dialog.Alert">
-        <item name="android:windowContentOverlay">@null</item>
-        <item name="android:windowCloseOnTouchOutside">true</item>
+        <item name="android:layout_gravity">center</item>
         <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:backgroundDimAmount">0.8</item>
+        <item name="android:windowAnimationStyle">@style/DialogAnim</item>
+    </style>
+    
+    <style name="DialogAnim">
+        <item name="android:windowEnterAnimation">@anim/slide_in</item>
+        <item name="android:windowExitAnimation">@anim/slide_out</item>
     </style>
 
 </resources>

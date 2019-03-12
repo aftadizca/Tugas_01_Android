@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity() {
             }
             override fun onItemSelected(p0: AdapterView<*>?, p1: View?, p2: Int, p3: Long) {
                 p1 as TextView
-                if(p2>0) p1.setTextColor(Color.BLACK) else{
+                if(p2>0) p1.setTextColor(ContextCompat.getColor(applicationContext,R.color.text_icon)) else{
                     p1.setTextColor(ContextCompat.getColor(applicationContext,R.color.colorHint))
                 }
 

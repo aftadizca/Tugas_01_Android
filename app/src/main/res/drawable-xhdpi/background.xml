@@ -1,13 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <!--<item>
+        <shape android:shape="rectangle">
+            <corners android:radius="5dp" />
+            <padding android:top="5dp" android:right="5dp" android:left="5dp" android:bottom="5dp"/>
+            <solid android:color="#0D000707" />
+        </shape>
+    </item>
     <item>
         <shape android:shape="rectangle">
             <corners android:radius="5dp" />
             <padding android:top="2dp" android:right="2dp" android:left="2dp" android:bottom="2dp"/>
-            <solid android:color="#14000707" />
+            <solid android:color="#1D000707" />
         </shape>
     </item>
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="5dp" />
+            <padding android:top="2dp" android:right="2dp" android:left="2dp" android:bottom="2dp"/>
+            <solid android:color="#2D000707" />
+        </shape>
+    </item>-->
     <!-- Bottom 2dp Shadow -->
     <item>
         <shape  android:shape="rectangle">
@@ -16,7 +30,7 @@
         </shape>
     </item>
     <!-- White Top color -->
-    <item android:bottom="7dp">
+    <item android:bottom="7dp" android:left="1dp" android:right="1dp" android:top="1dp">
         <shape  android:shape="rectangle">
             <solid android:color="@color/colorPrimary" />
             <corners android:radius="7dp" />
